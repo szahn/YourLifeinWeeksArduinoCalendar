@@ -17,3 +17,5 @@ Installation was simple as the display came with a shield compatible with the R3
 
 ### Next Steps
 I wouild like to attach a clock, so I can calculate the number of weeks remaining in my life calendar at real-time. In addition, making this battery operated and encased so it can be mounted on a wall would be ideal. 
+
+To really get fancy, you could hook this up to the web and read certain events from your Google Calendar and highlight certain blocks based on important events or milestones.
