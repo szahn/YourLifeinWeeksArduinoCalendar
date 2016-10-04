@@ -11,8 +11,8 @@ const int weeksInYear = 52;
 const int numYears = 75;
 const int numBlocksWeeksInLife = weeksInYear * numYears;
 
-const int weekNumber = 38; //This year's week number;
-const int numberOfYearsToDateExclusive = 29 * weeksInYear;
+const int weekNumber = 40; //This year's week number;
+const int numberOfYearsToDateExclusive = 30 * weeksInYear;
 const int weeksToDate = numberOfYearsToDateExclusive + weekNumber;
 
 struct calendar {
@@ -83,9 +83,8 @@ void draw() {
 }
 
 void drawCalendarInLandscape(){
-  drawCalendarBlocksInInLandscape(0, cal.numBlocksToDraw, 0, 0, 255);
-  drawCalendarBlocksInInLandscape(cal.numBlocksToDraw, cal.totalBlocks, 0, 128, 0);    
-  tft.drawRect(0, 0, cal.deviceWidth, cal.deviceHeight, tft.color565(255, 0, 0));
+  drawCalendarBlocksInInLandscape(0, cal.numBlocksToDraw, 0, 128, 0);
+  drawCalendarBlocksInInLandscape(cal.numBlocksToDraw, cal.totalBlocks, 0, 0, 64);    
 }
 
 void drawCalendarBlocksInInLandscape(unsigned int blockStart, unsigned int blockEnd, uint16_t r, uint16_t g, uint16_t b){
